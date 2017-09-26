@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Group 4 jQuery Functions!</title>
+        <style>
+                body {
+                    text-align: center;
+                }
+                .jq {
+                    color: blue;
+                }
+    
+        </style>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        
+            $(document).ready(function(){
+
+                $('#add-class').click(function(){
+                    $('#add-class-p').addClass("jq")
+                });
+
+                $("#toggle").click(function(){
+                    $("#toggle-p").toggle(function(){
+                        alert("testing the toggler!")
+                    })
+                });
+                $( ".val" ).click(function() {
+                    var text = $( this ).text();
+                    console.log(text);
+                    $( "#text-box" ).val( text );
+                  });
+            })
+
+        </script>
+        
+    </head>
+    <body>
+
+    <h1>Group 4 jQuery Functions!</h1>
+
+    <h2>AddClass</h2>
+    <button type="button" id="add-class">AddClass</button>
+    <p id="add-class-p">Click the button to add class to this sentence!</p>
+
+    <h2>Toggle</h2>
+    <button type="button" id="toggle">Toggle</button>
+    <p id="toggle-p">Click the button to toggle to this sentence!</p>
+    
+    <h3>Last but not least .val!</h3>
+    <fieldset>
+        <legend>Choose your interests</legend>
+
+        <div>
+            <button class='val'>Coding</button>
+            <button class='val'>Toggling</button>
+            <button class='val'>Music</button>
+        </div>
+            <input id="text-box" type="text" value="click a button">
+    </fieldset>
+    
+
+    
+    </body>
+
+</html>
