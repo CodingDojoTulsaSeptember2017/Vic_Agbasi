@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Disappearing Places</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('.pic').click(function(){
+                    $(this).hide();
+                    })
+                $('#restore').click(function(){
+                    $(".pic").show();
+                })
+            })
+            
+        </script>
+    </head>
+    <body>
+        <h1>jQuery - assignment 1</h1>
+        <div class="container">
+        <img class="element pic" src="pic1.jpg" alt="beautiful place">
+        <img class="element pic" src="pic2.jpg" alt="beautiful place2">
+        <img class="element pic" src="pic3.jpg" alt="beautiful place3">
+        <img class="element pic" src="pic4.jpg" alt="beautiful place4">
+        <img class="element pic" src="pic5.jpg" alt="beautiful place5">
+        <img class="element pic" src="pic6.jpg" alt="beautiful place6">
+        <img class="element pic" src="pic7.jpg" alt="beautiful place7">
+        <img class="element pic" src="pic8.jpg" alt="beautiful place8">
+        </div>
+        <button id="restore" type="button">Restore</button>
+    </body>
+</html>
